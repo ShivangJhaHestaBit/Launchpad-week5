@@ -33,6 +33,7 @@ services:
     image: nginx
     container_name: load-balancer
     ports:
+      - "80:80"
       - "443:443"
       - "5000:5000"
     depends_on:
